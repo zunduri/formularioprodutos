@@ -1,0 +1,291 @@
+        /* Estilo do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* Cor de fundo leve */
+            padding: 20px; /* Margem em torno do conteúdo */
+            box-sizing: border-box;
+        }
+        
+
+        /* Estilo do cabeçalho e rodapé */
+        header, footer {
+            background-color: #fff; /* Cor de fundo branca */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+            margin-bottom: 20px; /* Espaço abaixo do cabeçalho/rodapé */
+        }
+
+        h1 {
+            color: #333; /* Cor do título */
+            text-align: center; /* Centralizar o título */
+        }
+
+        /* Estilo do formulário */
+        .form-group {
+            margin-bottom: 15px; /* Espaço entre grupos de campos */
+        }
+
+        /* Flexbox para alinhar itens no formulário */
+        .form-row {
+            display: flex; /* Usar flexbox */
+            justify-content: space-between; /* Espaço entre itens */
+            align-items: center; /* Alinhamento vertical */
+            margin-bottom: 15px; /* Espaço abaixo da linha */
+        }
+
+        .options {
+            margin-right: 20px; /* Espaço à direita entre grupos */
+        }
+
+        .radio-group {
+            display: flex; /* Flexbox para opções de rádio */
+            gap: 10px; /* Espaço entre opções */
+            margin-top: 5px; /* Espaço acima do grupo de rádio */
+        }
+
+        .user-data {
+            margin-top: 5px; /* Espaço acima dos dados do usuário */
+            font-style: italic; /* Estilo opcional para os dados do usuário */
+            color: #666; /* Cor dos dados do usuário */
+        }
+
+        label {
+            display: block; /* Exibir cada label em nova linha */
+            margin-bottom: 5px; /* Espaço abaixo de cada label */
+            color: #555; /* Cor das labels */
+        }
+
+        /* Estilo dos campos de entrada */
+        input[type="text"], select {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda leve */
+            border-radius: 4px; /* Bordas arredondadas */
+            box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+        }
+
+        input[type="radio"] {
+            margin-right: 5px; /* Espaço à direita dos botões de rádio */
+        }
+
+        /* Estilo dos botões */
+        button {
+            padding: 10px 15px; /* Espaçamento interno */
+            background-color: #06a52b; /* Cor de fundo do botão */
+            color: white; /* Cor do texto */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor em forma de mão */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+
+        button:hover {
+            background-color: #218838; /* Cor do botão ao passar o mouse */
+        }
+
+        /* Estilo das seções de CRUD */
+        .crud-section {
+            margin-bottom: 20px; /* Espaço entre seções */
+            border: 1px solid #ccc; /* Borda leve */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 5px; /* Bordas arredondadas */
+            background-color: #fff; /* Cor de fundo da seção */
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        }
+
+        .valor-bruto, .valor-desconto {
+            font-weight: bold; /* Negrito para valores */
+        }
+
+        .declaracao {
+            margin-top: 40px; /* Espaço acima da declaração */
+            font-size: 14px; /* Tamanho da fonte */
+            text-align: center; /* Centralizar texto */
+            border-top: 1px solid #000; /* Linha acima */
+            padding-top: 20px; /* Espaçamento acima do texto */
+        }
+
+        #dados-usuario {
+            margin-top: 10px; 
+            display: none; 
+        }
+        
+        .delete-btn {
+            background-color: #dc3545; 
+            margin-left: 10px; 
+        }
+        .quantidade-produto::-webkit-outer-spin-button,
+        .quantidade-produto::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        .quantidade-produto[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+        }
+
+/* Caixa do nome do produto */
+.caixa-nome-produto {
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Transição para destaque do nome do produto */
+.caixa-nome-produto:empty {
+    background-color: #fff; /* Cor inicial */
+}
+
+.caixa-nome-produto:not(:empty) {
+    background-color: #d4f8d4; /* Fundo verde suave quando nome é exibido */
+    border-color: #6cbe6c; /* Borda mais forte */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .options {
+        margin-right: 0;
+    }
+
+    .crud-section {
+        padding: 15px;
+    }
+
+    .caixa-nome-produto {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Estilo para o label do nome do produto */
+label[for="nomeProduto"] {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 1rem;
+}
+
+/* Estilo para o span que exibe o nome do produto */
+.nome-produto {
+    display: inline-block;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    min-width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.nome-produto:not(:empty) {
+    background-color: #ffffff;
+    border-color: #dae9dd;
+}
+
+/* Estilos do botão */
+.btn-adicionar {
+    position: relative;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 50%; /* Botão redondo */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Transição suave */
+    overflow: hidden; /* Garante que nada ultrapasse o limite do botão */
+}
+
+/* Símbolo de "+" no centro do botão */
+.btn-adicionar::before {
+    content: "+";
+    font-size: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Texto que aparece ao passar o mouse */
+.btn-adicionar .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 100%; /* Começa fora da tela */
+    top: 50%;
+    transform: translateY(-50%) rotate(360deg); /* Roda o texto antes de exibir */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease; /* Transição suave para o texto */
+    white-space: nowrap;
+    width: 140px; /* Largura definida do texto */
+}
+
+/* Efeito de expansão do botão ao passar o mouse */
+.btn-adicionar:hover {
+    width: 200px; /* Expande o botão */
+    height: 60px; /* Mantém a altura */
+    border-radius: 50px; /* Bordas arredondadas ao expandir */
+}
+
+/* Rolagem do texto para dentro do botão ao passar o mouse */
+.btn-adicionar:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    left: 10px; /* O texto começa a se mover para o centro */
+    transform: translateX(0) translateY(-50%) rotate(0); /* Centraliza o texto e remove a rotação */
+}
+
+/* Esconde o "+" ao passar o mouse */
+.btn-adicionar:hover::before {
+    transform: scale(0); /* Esconde o símbolo "+" */
+}
+
+/* Efeito adicional de texto rolando dentro do botão */
+ul.btn-adicionar li:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 60px; /* Começa do lado do botão */
+    top: 0;
+    width: 80px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #1f4597;
+    background: rgb(236, 236, 236);
+    padding: 0 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: auto;
+}
