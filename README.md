@@ -4,7 +4,7 @@ Este é um sistema para gerenciamento de formulários de pendura.
 
 ## Acesse a versão ao vivo
 
-Você pode ver o projeto em funcionamento no seguinte link: [Visualizar o Projeto](https://zunduri.github.io/formularioprodutos/)
+Você pode ver o projeto em funcionamento no seguinte link: [Visualizar o Projeto](https://amandaalvesz.github.io/formularioprodutos/)
 
 
 ## Descrição
