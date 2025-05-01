@@ -1,6 +1,6 @@
 # Política de Segurança
 
-Se você encontrar alguma vulnerabilidade de segurança neste projeto, por favor, envie um e-mail para [seu-email@exemplo.com] com os detalhes.
+Se você encontrar alguma vulnerabilidade de segurança neste projeto, por favor, envie um e-mail para crisamandaalves.24@gmail.com com os detalhes.
 
 **Por favor, não abra issues públicas relacionadas a segurança.**
 
